@@ -1,0 +1,29 @@
+
+config system
+	option log_proto 'udp'
+	option log_ip '172.16.45.10'
+	option zonename 'Asia/Jerusalem'
+	option timezone 'IST-2IDT,M3.4.4/26,M10.5.0'
+	option hostname 'sd-dhis-gw'
+
+config dropbear
+	option Port '222'
+
+config site_info
+	option city 'Khartoum'
+	option country 'Sudan'
+	option countryabr 'SD'
+	option siteauth 'Sudan FMoH'
+
+config entuura_paas
+	option contactemail 'Entuura Helpdesk <dev@entuura.org>'
+	option sitedevemail 'dev+sd@entuura.org'
+	option sitedynname1 'sd.dhis2.site'
+	option siteou 'Digital Health (DHIS2) Services'
+
+config site_vpn
+	option accesshostname '172.16.104.133'
+	option port '22'
+	option proto 'udp'
+	option network '172.16.254.0'
+
