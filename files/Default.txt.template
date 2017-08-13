@@ -1,0 +1,18 @@
+client
+dev tun
+proto ##proto##
+remote ##accesshostname## ##port##
+resolv-retry infinite
+nobind
+mute-replay-warnings
+ns-cert-type server
+key-direction 1
+verb 1
+mute 20
+comp-lzo
+mssfix 1200
+cipher AES-256-CBC
+# uncomment for Windows 7 clients
+#route-method exe
+#route-delay 2
+

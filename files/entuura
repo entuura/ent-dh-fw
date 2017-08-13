@@ -5,14 +5,16 @@ config system
 	option zonename 'Asia/Jerusalem'
 	option timezone 'IST-2IDT,M3.4.4/26,M10.5.0'
 	option hostname 'sd-dhis-gw'
+	option defpwd 'dhis4you'
 
 config dropbear
 	option Port '222'
 
 config site_info
 	option city 'Khartoum'
+	option province ''
 	option country 'Sudan'
-	option countryabr 'SD'
+	option countryabbr 'SD'
 	option siteauth 'Sudan FMoH'
 
 config entuura_paas
@@ -22,8 +24,11 @@ config entuura_paas
 	option siteou 'Digital Health (DHIS2) Services'
 
 config site_vpn
+	option vpnname 'DHIS2_VPN'
+	option vpnshortname 'dh-vpnserver'
 	option accesshostname '172.16.104.133'
 	option port '22'
 	option proto 'udp'
 	option network '172.16.254.0'
+	option netmask '255.255.255.0'
 
